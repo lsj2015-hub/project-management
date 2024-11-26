@@ -23,8 +23,8 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('This is home route');
 });
-app.use('/projects', projectRoutes);
-app.use('/tasks', taskRoutes);
+app.use('/api/projects', projectRoutes);
+app.use('/api/tasks', taskRoutes);
 
 /* SERVER */
 const PORT = process.env.PORT || 4000;

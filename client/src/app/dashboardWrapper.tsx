@@ -3,8 +3,8 @@
 import React, { useEffect } from "react";
 import StoreProvider, { useAppSelector } from "./redux";
 
-import Navbar from "@/app/(components)/Navbar";
-import Sidebar from "@/app/(components)/Sidebar";
+import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const isSidebarCollapsed = useAppSelector(

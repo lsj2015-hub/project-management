@@ -26,8 +26,8 @@ app.use((0, cors_1.default)());
 app.get('/', (req, res) => {
     res.send('This is home route');
 });
-app.use('/projects', projectRoutes_1.default);
-app.use('/tasks', taskRoutes_1.default);
+app.use('/api/projects', projectRoutes_1.default);
+app.use('/api/tasks', taskRoutes_1.default);
 /* SERVER */
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
