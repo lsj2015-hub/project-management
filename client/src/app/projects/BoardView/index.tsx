@@ -98,7 +98,7 @@ const TaskColumn = ({
           <h3 className="flex items-center text-lg font-semibold dark:text-white">
             {status}{" "}
             <span
-              className="ml-2 inline-block rounded-full bg-gray-200 p-1 text-center text-sm leading-none dark:bg-dark-teritiary"
+              className="dark:bg-dark-tertiary ml-2 inline-block rounded-full bg-gray-200 p-1 text-center text-sm leading-none"
               style={{ width: "1.5rem", height: "1.5rem" }}
             >
               {tasksCount}
@@ -109,7 +109,7 @@ const TaskColumn = ({
               <EllipsisVertical size={26} />
             </button>
             <button
-              className="flex h-6 w-6 items-center justify-center rounded bg-gray-200 dark:bg-dark-teritiary dark:text-white"
+              className="dark:bg-dark-tertiary flex h-6 w-6 items-center justify-center rounded bg-gray-200 dark:text-white"
               onClick={() => setIsModalNewTaskOpen(true)}
             >
               <Plus size={16} />

@@ -26,7 +26,7 @@ const config: Config = {
         },
         "dark-bg": "#101214",
         "dark-secondary": "#1d1f21",
-        "dark-teritiary": "#3b3d41",
+        "dark-tertiary": "#3b3d41",
         "blue-primary": "#0277ff",
         "stroke-dark": "#2d3135",
       },

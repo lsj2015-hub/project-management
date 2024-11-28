@@ -31,14 +31,14 @@ const columns: GridColDef[] = [
     field: "author",
     headerName: "Author",
     width: 150,
-    renderCell: (params) => params.value.username || "UnKnown",
+    renderCell: (params) => params?.value?.username || "UnKnown",
   },
 
   {
     field: "assignee",
     headerName: "Assignee",
     width: 150,
-    renderCell: (params) => params.value.username || "Unassigned",
+    renderCell: (params) => params?.value?.username || "Unassigned",
   },
 ];
 
@@ -54,9 +54,20 @@ const TableView = ({ id, setIsModalNewTaskOpen }: TableProps) => {
   if (error) return <div>An error occurred while fetching tasks</div>;
 
   return (
-    <div className="h-[540px] w-full px-4 py-8 xl:px-6">
+    <div className="h-[540px] w-full px-4 pb-8 xl:px-6">
       <div className="pt-5">
-        <Header name="Table" isSmallText />
+        <Header
+          name="Table"
+          buttonComponent={
+            <button
+              className="flex items-center rounded bg-blue-primary px-3 py-2 text-white hover:bg-blue-600"
+              onClick={() => setIsModalNewTaskOpen(true)}
+            >
+              Add Task
+            </button>
+          }
+          isSmallText
+        />
       </div>
       <DataGrid
         rows={tasks || []}
