@@ -24,7 +24,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { dataGridClassNames, dataGridSxStyles } from "../lib/utils";
+import { dataGridClassNames, dataGridSxStyles } from "../../lib/utils";
 
 const HomePage = () => {
   const {

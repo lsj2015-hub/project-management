@@ -3,7 +3,7 @@ import { useGetTasksQuery } from "@/state/api";
 import { useAppSelector } from "@/app/redux";
 import Header from "@/components/Header";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { dataGridClassNames, dataGridSxStyles } from "@/app/lib/utils";
+import { dataGridClassNames, dataGridSxStyles } from "@/lib/utils";
 
 type TableProps = {
   id: string;
